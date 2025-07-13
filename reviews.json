@@ -1,0 +1,466 @@
+{
+  "reviews": [
+    {
+      "professor": "Dr. Alice Johnson",
+      "review": "Great professor with deep knowledge of Math. Engaging lectures and helpful.",
+      "subject": "Math",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Alice Johnson",
+      "review": "Very passionate about teaching Math. Classes are challenging but rewarding.",
+      "subject": "Math",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Alice Johnson",
+      "review": "Dr. Alice Johnson is a Math genius! Clear explanations and approachable.",
+      "subject": "Math",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Alice Johnson",
+      "review": "Good professor but the pace can be too fast for some students.",
+      "subject": "Math",
+      "stars": 3
+    },
+    {
+      "professor": "Dr. Alice Johnson",
+      "review": "Excellent Math instructor. Assignments are relevant and interesting.",
+      "subject": "Math",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Michael Smith",
+      "review": "Dr. Michael Smith makes History come alive with engaging stories and examples.",
+      "subject": "History",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Michael Smith",
+      "review": "Well-organized History classes with plenty of interesting material.",
+      "subject": "History",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Michael Smith",
+      "review": "A knowledgeable History professor who sometimes can be a bit dry.",
+      "subject": "History",
+      "stars": 3
+    },
+    {
+      "professor": "Dr. Michael Smith",
+      "review": "Very informative History lectures, but could improve interaction with students.",
+      "subject": "History",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Michael Smith",
+      "review": "An excellent History teacher who is passionate about the subject.",
+      "subject": "History",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Emily Davis",
+      "review": "Dr. Emily Davis is a fantastic Chemistry teacher. Clear explanations and engaging labs.",
+      "subject": "Chemistry",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Emily Davis",
+      "review": "Very thorough in Chemistry. Helps students understand complex concepts.",
+      "subject": "Chemistry",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Emily Davis",
+      "review": "Good Chemistry professor, but sometimes the workload can be overwhelming.",
+      "subject": "Chemistry",
+      "stars": 3
+    },
+    {
+      "professor": "Dr. Emily Davis",
+      "review": "Great at making Chemistry interesting and relevant.",
+      "subject": "Chemistry",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Emily Davis",
+      "review": "Very knowledgeable and approachable in Chemistry.",
+      "subject": "Chemistry",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Olivia Brown",
+      "review": "Dr. Olivia Brown is an excellent English professor. Engaging and thoughtful lectures.",
+      "subject": "English",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Olivia Brown",
+      "review": "A passionate English teacher with great feedback on writing assignments.",
+      "subject": "English",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Olivia Brown",
+      "review": "Provides insightful critiques and helps improve writing skills significantly.",
+      "subject": "English",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Olivia Brown",
+      "review": "Good professor but sometimes the class discussions can be slow.",
+      "subject": "English",
+      "stars": 3
+    },
+    {
+      "professor": "Dr. Olivia Brown",
+      "review": "Great at encouraging creative writing and critical thinking.",
+      "subject": "English",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. James Wilson",
+      "review": "Dr. James Wilson is an amazing Physics professor. Very engaging and insightful.",
+      "subject": "Physics",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. James Wilson",
+      "review": "Excellent in explaining complex Physics concepts with clarity.",
+      "subject": "Physics",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. James Wilson",
+      "review": "Good Physics lectures but could provide more real-world examples.",
+      "subject": "Physics",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. James Wilson",
+      "review": "A solid Physics professor, but sometimes the classes can be too theoretical.",
+      "subject": "Physics",
+      "stars": 3
+    },
+    {
+      "professor": "Dr. James Wilson",
+      "review": "Very knowledgeable in Physics and always willing to help students.",
+      "subject": "Physics",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Sophia Lee",
+      "review": "Dr. Sophia Lee is an exceptional Biology teacher. Makes learning fun and interactive.",
+      "subject": "Biology",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Sophia Lee",
+      "review": "Great at explaining complex Biology concepts with practical examples.",
+      "subject": "Biology",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Sophia Lee",
+      "review": "A good Biology professor but sometimes the material can be dense.",
+      "subject": "Biology",
+      "stars": 3
+    },
+    {
+      "professor": "Dr. Sophia Lee",
+      "review": "Interesting Biology classes with engaging lab sessions.",
+      "subject": "Biology",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Sophia Lee",
+      "review": "Very dedicated to teaching Biology and helping students succeed.",
+      "subject": "Biology",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Daniel Martinez",
+      "review": "Dr. Daniel Martinez is a great Philosophy professor with thought-provoking lectures.",
+      "subject": "Philosophy",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Daniel Martinez",
+      "review": "Provides deep insights into philosophical concepts and encourages critical thinking.",
+      "subject": "Philosophy",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Daniel Martinez",
+      "review": "Good at presenting philosophical ideas but sometimes the class can be a bit abstract.",
+      "subject": "Philosophy",
+      "stars": 3
+    },
+    {
+      "professor": "Dr. Daniel Martinez",
+      "review": "Engages students well with Philosophy topics and class discussions.",
+      "subject": "Philosophy",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Daniel Martinez",
+      "review": "An excellent Philosophy instructor who makes complex topics accessible.",
+      "subject": "Philosophy",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Isabella Green",
+      "review": "Dr. Isabella Green is an amazing Economics professor with clear and practical lessons.",
+      "subject": "Economics",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Isabella Green",
+      "review": "Great at breaking down complex economic theories into understandable concepts.",
+      "subject": "Economics",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Isabella Green",
+      "review": "Good professor but sometimes the pace of the class is too fast.",
+      "subject": "Economics",
+      "stars": 3
+    },
+    {
+      "professor": "Dr. Isabella Green",
+      "review": "Interesting Economics lectures with relevant examples and applications.",
+      "subject": "Economics",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Isabella Green",
+      "review": "Very knowledgeable in Economics and always open to questions.",
+      "subject": "Economics",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Ethan Brown",
+      "review": "Dr. Ethan Brown is a skilled Computer Science teacher. Clear explanations and hands-on labs.",
+      "subject": "Computer Science",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Ethan Brown",
+      "review": "Great at making Computer Science topics engaging and relevant.",
+      "subject": "Computer Science",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Ethan Brown",
+      "review": "Good Computer Science professor, but the workload can be heavy.",
+      "subject": "Computer Science",
+      "stars": 3
+    },
+    {
+      "professor": "Dr. Ethan Brown",
+      "review": "Interesting Computer Science lectures but could benefit from more interactive elements.",
+      "subject": "Computer Science",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Ethan Brown",
+      "review": "Very helpful and knowledgeable in Computer Science, always willing to assist.",
+      "subject": "Computer Science",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Ava Wilson",
+      "review": "Dr. Ava Wilson is a fantastic Art History professor with engaging lectures.",
+      "subject": "Art History",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Ava Wilson",
+      "review": "Great at connecting art movements with historical contexts.",
+      "subject": "Art History",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Ava Wilson",
+      "review": "Good Art History classes but sometimes the material can be a bit dry.",
+      "subject": "Art History",
+      "stars": 3
+    },
+    {
+      "professor": "Dr. Ava Wilson",
+      "review": "Interesting and well-organized Art History lectures.",
+      "subject": "Art History",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Ava Wilson",
+      "review": "Very passionate about Art History and helps students appreciate art.",
+      "subject": "Art History",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Liam Taylor",
+      "review": "Dr. Liam Taylor is an excellent Statistics professor with practical insights.",
+      "subject": "Statistics",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Liam Taylor",
+      "review": "Great at teaching Statistics with real-world examples and applications.",
+      "subject": "Statistics",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Liam Taylor",
+      "review": "Good Statistics classes but could provide more detailed feedback on assignments.",
+      "subject": "Statistics",
+      "stars": 3
+    },
+    {
+      "professor": "Dr. Liam Taylor",
+      "review": "Very knowledgeable in Statistics and explains complex concepts clearly.",
+      "subject": "Statistics",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Liam Taylor",
+      "review": "Helpful and engaging Statistics professor, always ready to help students.",
+      "subject": "Statistics",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Mia Harris",
+      "review": "Dr. Mia Harris is a wonderful Sociology professor with interactive classes.",
+      "subject": "Sociology",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Mia Harris",
+      "review": "Engages students with interesting Sociology topics and discussions.",
+      "subject": "Sociology",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Mia Harris",
+      "review": "Good Sociology professor but sometimes the classes can be a bit theoretical.",
+      "subject": "Sociology",
+      "stars": 3
+    },
+    {
+      "professor": "Dr. Mia Harris",
+      "review": "Very knowledgeable in Sociology and makes learning enjoyable.",
+      "subject": "Sociology",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Mia Harris",
+      "review": "An excellent Sociology instructor who is passionate about the subject.",
+      "subject": "Sociology",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Noah Clark",
+      "review": "Dr. Noah Clark is a superb Political Science professor with insightful lectures.",
+      "subject": "Political Science",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Noah Clark",
+      "review": "Great at explaining complex Political Science concepts with clarity.",
+      "subject": "Political Science",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Noah Clark",
+      "review": "Good Political Science professor but sometimes the material is too dense.",
+      "subject": "Political Science",
+      "stars": 3
+    },
+    {
+      "professor": "Dr. Noah Clark",
+      "review": "Very engaging and knowledgeable in Political Science.",
+      "subject": "Political Science",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Noah Clark",
+      "review": "An excellent Political Science teacher who encourages critical thinking.",
+      "subject": "Political Science",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Ella Martinez",
+      "review": "Dr. Ella Martinez is an outstanding Environmental Science professor. Engaging and knowledgeable.",
+      "subject": "Environmental Science",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Ella Martinez",
+      "review": "Very informative Environmental Science classes with practical applications.",
+      "subject": "Environmental Science",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Ella Martinez",
+      "review": "Good Environmental Science professor but sometimes the material is too broad.",
+      "subject": "Environmental Science",
+      "stars": 3
+    },
+    {
+      "professor": "Dr. Ella Martinez",
+      "review": "Interesting Environmental Science lectures with relevant case studies.",
+      "subject": "Environmental Science",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Ella Martinez",
+      "review": "Very passionate about Environmental Science and helps students understand the impact.",
+      "subject": "Environmental Science",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Lucas Taylor",
+      "review": "Dr. Lucas Taylor is a brilliant Statistics professor with clear and practical lessons.",
+      "subject": "Statistics",
+      "stars": 5
+    },
+    {
+      "professor": "Dr. Lucas Taylor",
+      "review": "Excellent at explaining statistical methods and real-world applications.",
+      "subject": "Statistics",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Lucas Taylor",
+      "review": "Good Statistics professor, but the course can be quite demanding.",
+      "subject": "Statistics",
+      "stars": 3
+    },
+    {
+      "professor": "Dr. Lucas Taylor",
+      "review": "Very knowledgeable in Statistics and always available for questions.",
+      "subject": "Statistics",
+      "stars": 4
+    },
+    {
+      "professor": "Dr. Lucas Taylor",
+      "review": "An excellent Statistics teacher who makes complex concepts easier to understand.",
+      "subject": "Statistics",
+      "stars": 5
+    },
+    {
+      "professor": "Moosa Hassan",
+      "subject": "Computer Science",
+      "review": "Interesting approach to teaching lectures. Is a good grader but fails to maintain class discipline at times.",
+      "stars": 4
+    },
+    {
+      "professor": "Moosa Hassan",
+      "subject": "Computer Science",
+      "review": "Not good. He eats cabbage",
+      "stars": 2
+    }
+  ]
+}
