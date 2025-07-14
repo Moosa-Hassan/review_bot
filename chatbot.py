@@ -32,7 +32,13 @@ def add_review(professor, subject, review_text, stars, data):
     save_reviews(data)
     return "✅ Review added successfully!"
 
-import ollama
+from openai import OpenAI
+import os
+
+client = OpenAI(
+    api_key=os.getenv("review_bot_key"),
+    base_url="https://openrouter.ai/api/v1"
+)
 
 def summarize_reviews(entity_name, reviews):
     if not reviews:
@@ -42,7 +48,7 @@ def summarize_reviews(entity_name, reviews):
         f"- {r['professor']} ({r['subject']}, {r['stars']}★): {r['review']}"
         for r in reviews
     ])
-
+    #"\n".join([r["review"] for r in reviews])
     prompt = f"""
     You are a helpful assistant that summarizes teacher reviews for students.
 
@@ -51,18 +57,15 @@ def summarize_reviews(entity_name, reviews):
     - The teacher’s strengths and weaknesses
     - Practical advice for students taking their course
     
-    Ignore reviews that appear overly emotional, excessively biased, 
-    or intended to harm rather than provide constructive feedback
+    
 
-    Reviews:
-    {review_text}
-    Respond using this exact format:
+    Follow this **exact output format**:
+   Subject: <Subject> (Professor Name)
 
-    Subject: <subject>
-    Instructor: <professor name>
+    Instructor: <Full Professor Name>
 
     Summary:
-    <Brief paragraph summarizing tone, teaching style, and general feedback>
+    <One short paragraph summarizing sentiment, teaching style, and common student feedback.>
 
     Strengths:
     - <Point 1>
@@ -74,16 +77,21 @@ def summarize_reviews(entity_name, reviews):
     - ...
 
     Advice for Students:
-    - <Point 1>
+    - <Tip 1>
+    - <Tip 2>
     - ...
-    """
 
-    response = ollama.chat(
-        model="tinyllama",
+    Strictly follow this formatting and avoid extra headers or markdown.
+    """
+    
+    response = client.chat.completions.create(
+        model="mistralai/mistral-7b-instruct",
         messages=[
             {"role": "system", "content": "You summarize academic reviews."},
             {"role": "user", "content": prompt}
-        ]
+        ],
+        temperature = 0.7,
+        max_tokens = 400,
     )
 
-    return response['message']['content']
+    return response.choices[0].message.content
