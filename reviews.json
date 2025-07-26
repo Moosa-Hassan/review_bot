@@ -461,6 +461,30 @@
       "subject": "Computer Science",
       "review": "Not good. He eats cabbage",
       "stars": 2
+    },
+    {
+      "professor": "Sulaiman Pasha",
+      "subject": "Buisness",
+      "review": "Rarely shows up to class and does not give feedback on assignments.",
+      "stars": 2
+    },
+    {
+      "professor": "Sulaiman Pasha",
+      "subject": "Buisness",
+      "review": "Is a very bad grader and has no respect for the students and does provides no direction to us.",
+      "stars": 1
+    },
+    {
+      "professor": "Habbibi John",
+      "subject": "Tourism 101",
+      "review": "Very good instructor. But grade depending wholly on project is a bit much",
+      "stars": 4
+    },
+    {
+      "professor": "Habbibi John",
+      "subject": "Tourism 101",
+      "review": "Damn that man crazy",
+      "stars": 3
     }
   ]
 }

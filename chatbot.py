@@ -1,26 +1,37 @@
 import json
 
-DATA_FILE = "reviews.json"
+INSTRUCTOR_FILE = "reviews.json"
+COURSE_FILE = "course.json"
 
-def load_reviews():
+def load_instructor_reviews():
     """Load reviews from the JSON file."""
-    with open(DATA_FILE, "r") as data:
+    with open(INSTRUCTOR_FILE, "r") as data:
+        return json.load(data)
+    
+def load_course_reviews():
+    """Load reviews from the JSON file."""
+    with open(COURSE_FILE, "r") as data:
         return json.load(data)
 
-def save_reviews(data):
+def save_instructor_reviews(data):
     """Save updated reviews back to the JSON file."""
-    with open(DATA_FILE, "w") as f:
+    with open(INSTRUCTOR_FILE, "w") as f:
+        json.dump(data, f, indent=2)
+        
+def save_course_reviews(data):
+    """Save updated reviews back to the JSON file."""
+    with open(COURSE_FILE, "w") as f:
         json.dump(data, f, indent=2)
 
 def search_reviews_by_professor(name, data):
     """Return all reviews that match a professor's name."""
-    return [r for r in data["reviews"] if name.lower() in r["professor"].lower()]
+    return [r for r in data["reviews"] if name.lower() in r.get("professor","").lower()]
 
 def search_reviews_by_subject(subject, data):
     """Return all reviews that match a subject name."""
-    return [r for r in data["reviews"] if subject.lower() in r["subject"].lower()]
+    return [r for r in data["reviews"] if subject.lower() in r.get("subject","").lower()]
 
-def add_review(professor, subject, review_text, stars, data):
+def add_Instructor_review(professor, subject, review_text, stars, data):
     """Add a new review and save to file."""
     new_entry = {
         "professor": professor,
@@ -29,7 +40,18 @@ def add_review(professor, subject, review_text, stars, data):
         "stars": stars
     }
     data["reviews"].append(new_entry)
-    save_reviews(data)
+    save_instructor_reviews(data)
+    return "✅ Review added successfully!"
+
+def add_Course_review(subject, review, stars, data):
+    """Add a new review and save to file."""
+    new_entry = {
+        "subject": subject,
+        "review": review,
+        "stars": stars
+    }
+    data["reviews"].append(new_entry)
+    save_course_reviews(data)
     return "✅ Review added successfully!"
 
 from openai import OpenAI
@@ -40,48 +62,50 @@ client = OpenAI(
     base_url="https://openrouter.ai/api/v1"
 )
 
-def summarize_reviews(entity_name, reviews):
+def summarize_reviews(entity_name, reviews,who):
     if not reviews:
         return f"No reviews found for {entity_name}."
 
-    review_text = "\n".join([
-        f"- {r['professor']} ({r['subject']}, {r['stars']}★): {r['review']}"
-        for r in reviews
-    ])
+    if who=="Instructor":
+        review_text = "\n".join([
+            f"- {r['professor']} ({r['subject']}, {r['stars']}★): {r['review']}"
+            for r in reviews
+        ])
+    elif who =="Course":
+        review_text = "\n".join([
+            f"- {r['subject']}, ({r['stars']}★): {r['review']}"
+            for r in reviews
+        ])
     #"\n".join([r["review"] for r in reviews])
-    prompt = f"""
-    You are a helpful assistant that summarizes teacher reviews for students.
+    prompt =  f"""
+    You are a helpful assistant that summarizes student reviews for professors.
 
-    Based on the following reviews for "{entity_name}", provide:
-    - A concise summary of overall sentiment
-    - The teacher’s strengths and weaknesses
-    - Practical advice for students taking their course
-    
-    
+    Here are actual reviews for "{entity_name}":
 
-    Follow this **exact output format**:
-   Subject: <Subject> (Professor Name)
+    {review_text}
 
-    Instructor: <Full Professor Name>
+    Use only this information — do not invent. If no weaknesses are mentioned, say "No significant weaknesses noted."
+
+    Now summarize with this structure:
+
+    If summarizing a professor, set:
+    Instructor: {entity_name}
+
+    If summarizing a course, set:
+    Subject: {entity_name}
+
 
     Summary:
-    <One short paragraph summarizing sentiment, teaching style, and common student feedback.>
+    <Short paragraph summarizing overall sentiment, teaching style, and trends in reviews.>
 
     Strengths:
-    - <Point 1>
-    - <Point 2>
     - ...
 
     Weaknesses:
-    - <Point 1>
     - ...
 
     Advice for Students:
-    - <Tip 1>
-    - <Tip 2>
     - ...
-
-    Strictly follow this formatting and avoid extra headers or markdown.
     """
     
     response = client.chat.completions.create(

@@ -171,9 +171,17 @@
   <input type="checkbox" id="menu-toggle" hidden>
   <div class="sidebar">
     <h2>📝 Add a Review</h2>
-    <form action="/add" method="post">
+    <h5> For Instructor</h5>
+    <form action="/add_instructor_review" method="post">
       <input type="text" name="professor" placeholder="Professor" required />
       <input type="text" name="subject" placeholder="Subject" required />
+      <textarea name="review" placeholder="Your review" required></textarea>
+      <input type="number" name="stars" min="1" max="5" placeholder="Stars (1–5)" required />
+      <button type="submit">Submit Review</button>
+    </form>
+    <h5> For Course</h5>
+    <form action="/add_course_review" method="post">
+      <input type="text" name="subject" placeholder="Course" required />
       <textarea name="review" placeholder="Your review" required></textarea>
       <input type="number" name="stars" min="1" max="5" placeholder="Stars (1–5)" required />
       <button type="submit">Submit Review</button>
@@ -190,7 +198,7 @@
     </div>
 
     <form class="chat-form" method="post">
-      <textarea name="query" placeholder="Ask about a professor or subject..." required></textarea>
+      <textarea name="query" placeholder="Enter a professor or course name..." required></textarea>
       <button type="submit">Send</button>
       <label class="menu-label" for="menu-toggle">+</label>
     </form>

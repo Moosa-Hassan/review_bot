@@ -1,0 +1,64 @@
+{
+  "reviews": [
+    {
+      "subject": "Data Structures",
+      "review": "Challenging but rewarding course. The assignments really helped solidify the concepts.",
+      "stars": 4
+    },
+    {
+      "subject": "Operating Systems",
+      "review": "Tough grading and fast-paced lectures, but learned a lot about how systems work.",
+      "stars": 3
+    },
+    {
+      "subject": "Computer Networks",
+      "review": "The professor was engaging and explained networking concepts very clearly.",
+      "stars": 5
+    },
+    {
+      "subject": "Machine Learning",
+      "review": "Very hands-on with practical projects, though the math was intense.",
+      "stars": 4
+    },
+    {
+      "subject": "Databases",
+      "review": "Clear structure, relevant content, and helpful teaching assistant support.",
+      "stars": 5
+    },
+    {
+      "subject": "Web Development",
+      "review": "Fun and practical course, though some parts felt rushed.",
+      "stars": 4
+    },
+    {
+      "subject": "Artificial Intelligence",
+      "review": "Content was theoretical with not much coding, but lectures were insightful.",
+      "stars": 3
+    },
+    {
+      "subject": "Software Engineering",
+      "review": "Group project was a great learning experience. Lectures were a bit dry though.",
+      "stars": 4
+    },
+    {
+      "subject": "Computer Graphics",
+      "review": "Exciting visuals and challenging coding assignments. Loved it!",
+      "stars": 5
+    },
+    {
+      "subject": "Cybersecurity",
+      "review": "A lot of real-world scenarios discussed. Could use more hands-on labs.",
+      "stars": 4
+    },
+    {
+      "subject": "Tourism 101",
+      "review": "Veru practical and fun course.",
+      "stars": 5
+    },
+    {
+      "subject": "Tourism 101",
+      "review": "Damn that course crazy",
+      "stars": 4
+    }
+  ]
+}
