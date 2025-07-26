@@ -3,6 +3,7 @@ from chatbot import (
     load_instructor_reviews,search_reviews_by_professor, search_reviews_by_subject,
     summarize_reviews, add_Instructor_review, load_course_reviews , add_Course_review
 )
+import os
 
 app = Flask(__name__)
 
@@ -48,4 +49,5 @@ def add_course_review():
     return redirect("/")
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+   port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
