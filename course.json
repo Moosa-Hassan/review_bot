@@ -59,6 +59,11 @@
       "subject": "Tourism 101",
       "review": "Damn that course crazy",
       "stars": 4
+    },
+    {
+      "subject": "Tourism",
+      "review": "Too much fun. waste of time. we just have func activities but we do no work. final report is just pics we took along the way",
+      "stars": 3
     }
   ]
 }

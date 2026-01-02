@@ -485,6 +485,18 @@
       "subject": "Tourism 101",
       "review": "Damn that man crazy",
       "stars": 3
+    },
+    {
+      "professor": "Moosa Hassan",
+      "subject": "Computer Science",
+      "review": "sad boy",
+      "stars": 3
+    },
+    {
+      "professor": "Moosa Hassan Alvi",
+      "subject": "Math",
+      "review": "Could make u love math like meth. only giving 5 as cant give infinity",
+      "stars": 5
     }
   ]
 }
